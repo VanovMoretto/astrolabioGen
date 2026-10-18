@@ -1,0 +1,116 @@
+.subAccordion {
+  width: 100%;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  background-color: transparent;
+  border: 1px solid var(--color-border);
+  overflow: hidden;
+}
+
+.subAccordion:last-child {
+  margin-bottom: 0;
+}
+
+.subAccordionHeader {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 13px 16px;
+  color: var(--color-text-on-primary);
+  background-color: var(--color-primary);
+  border: none;
+  border-left: 4px solid transparent;
+  cursor: pointer;
+  text-align: left;
+  font-size: 0.92rem;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.25s ease, border-left-color 0.25s ease, filter 0.2s ease;
+}
+
+.subAccordionHeader:hover {
+  filter: brightness(1.06);
+}
+
+.subAccordionHeader.open {
+  background-color: var(--gen-purple-dark);
+  border-left-color: var(--color-secondary);
+}
+
+.icon {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  color: var(--color-text-on-primary);
+}
+
+.subAccordionHeader.open .icon {
+  color: var(--color-secondary);
+}
+
+.title {
+  flex-grow: 1;
+}
+
+.chevron {
+  color: var(--color-text-on-primary);
+  transition: transform 0.35s ease-in-out, color 0.25s ease;
+}
+
+.chevron.open {
+  transform: rotate(180deg);
+  color: var(--color-secondary);
+}
+
+.subAccordionContent {
+  overflow: hidden;
+  background-color: var(--color-surface-hover);
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s ease-in-out;
+}
+
+.subAccordionContent.open {
+  grid-template-rows: 1fr;
+}
+
+.contentPadding {
+  padding: 0 16px;
+  line-height: 1.6;
+  color: var(--color-text-body);
+  min-height: 0;
+  transition: padding 0.35s ease-in-out;
+}
+
+.subAccordionContent.open .contentPadding {
+  padding: 14px 16px 16px 16px;
+}
+
+.contentPadding p {
+  margin: 0 0 12px 0;
+  font-size: 0.9rem;
+}
+
+.contentPadding p:last-child {
+  margin-bottom: 0;
+}
+
+.contentPadding strong {
+  color: var(--color-text-strong);
+  font-weight: 700;
+}
+
+.contentPadding ul {
+  padding-left: 20px;
+  margin: 0;
+  font-size: 0.9rem;
+  list-style-type: disc;
+}
+
+.contentPadding li {
+  margin-bottom: 8px;
+}
+
+.contentPadding li:last-child {
+  margin-bottom: 0;
+}

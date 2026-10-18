@@ -1,80 +1,108 @@
-import React from "react";
-import { FaWhatsapp } from "react-icons/fa";
-import { Utensils, Tv } from "lucide-react";
-import styles from "./App.module.css";
-import Footer from "./components/Footer"
+import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
+import { useAccordionData } from "./data/accordionData";
+import { useFrigobarData, type ModalCategoryData } from "./data/frigobarData";
+import { useSkyData } from "./data/skyData";
+import Accordion from "./components/Accordion";
+import Modal from "./components/Modal";
+import Footer from "./components/Footer";
+import LanguageSwitcher from "./components/LanguageSwitcher";
+import FloatingWhatsApp from "./components/FloatingWhatsApp";
+import logoSvg from "./assets/logo.png";
+import "./App.css";
+
+interface ModalState {
+  title: string;
+  data: ModalCategoryData[];
+  note?: string;
+  searchable?: boolean;
+  searchPlaceholder?: string;
+  customHeaders?: {
+    qty?: string;
+    item: string;
+    value: string;
+  };
+}
+
+const Logo: React.FC = () => {
+  return (
+    <div className="logo">
+      <img src={logoSvg} alt="Logo Astrolábio Swan Generation" />
+    </div>
+  );
+};
 
 const App: React.FC = () => {
+  const { t } = useTranslation();
+  const accordionData = useAccordionData();
+  const frigobarPriceList = useFrigobarData();
+  const skyChannelList = useSkyData();
+
+  const [modalContent, setModalContent] = useState<ModalState | null>(null);
+
+  const openFrigobarModal = () =>
+    setModalContent({
+      title: t("modal.frigobarTitle"),
+      data: frigobarPriceList,
+      searchable: false,
+    });
+
+  const openSkyModal = () =>
+    setModalContent({
+      title: t("modal.skyTitle"),
+      data: skyChannelList,
+      searchable: true,
+      searchPlaceholder: t("modal.skySearchPlaceholder"),
+      customHeaders: {
+        qty: t("modal.table.vc"),
+        item: t("modal.table.channel"),
+        value: t("modal.table.tech"),
+      },
+    });
+
+  const closeModal = () => setModalContent(null);
+
   return (
-    <div className={styles.pageWrapper}>
-      <div className={styles.appContainer}>
-        {/* CABEÇALHO DO ASTROLÁBIO GEN */}
-        <header className={styles.header}>
-          <span className={styles.badgeGen}>Guia Digital do Hóspede</span>
-          <h1 className={styles.title}>
-            Astrolábio <span className={styles.titleHighlight}>GEN</span>
-          </h1>
-          <p className={styles.subtitle}>
-            Swan Generation • Porto Alegre
-          </p>
-        </header>
+    <div className="app-wrapper">
+      <FloatingWhatsApp />
 
-        {/* CARD DE BOAS-VINDAS / CONCEITO */}
-        <section className={styles.introCard}>
-          <p>
-            O <strong>Astrolábio</strong> é o seu guia oficial de navegação no{" "}
-            <strong>Swan Generation</strong>. Aqui você encontra Wi-Fi, horários,
-            serviços e políticas da nossa hospedagem, coliving e coworking de
-            forma rápida e direta.
-          </p>
+      <div className="app-container">
+        <LanguageSwitcher />
+
+        <Logo />
+
+        <section className="intro-text">
+          <p>{t("introText")}</p>
         </section>
 
-        {/* AÇÕES RÁPIDAS (Como o hotel não possui ramais internos, isso facilita muito a vida do hóspede) */}
-        <section className={styles.quickActionsSection}>
-          <span className={styles.sectionLabel}>Atendimento Rápido (Sem Ramal)</span>
-          <div className={styles.quickActionsGrid}>
-            <a
-              href="https://wa.me/5551992284510"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.quickActionBtn}
-            >
-              <span className={styles.quickActionIcon}>
-                <FaWhatsapp size={22} />
-              </span>
-              <div className={styles.quickActionText}>
-                <span>Recepção</span>
-                <small>WhatsApp 24h</small>
-              </div>
-            </a>
-
-            <a
-              href="https://wa.me/5551984008942"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.quickActionBtn}
-            >
-              <span className={styles.quickActionIcon}>
-                <Utensils size={20} />
-              </span>
-              <div className={styles.quickActionText}>
-                <span>Restaurante</span>
-                <small>Room Service</small>
-              </div>
-            </a>
-          </div>
-        </section>
-
-        {/* CONTEÚDO PRINCIPAL (ONDE ENTRARÃO OS ACCORDIONS) */}
-        <main className={styles.accordionList}>
-          <div className={styles.placeholderBox}>
-            Próximo passo: Aqui entrarão os Accordions (Wi-Fi, Check-in/out, Café
-            da Manhã, Frigobar, Lavanderia, Guia Sky e Políticas).
-          </div>
+        <main className="accordion-list">
+          {accordionData.map((item) => {
+            const ContentComponent = item.content;
+            return (
+              <Accordion key={item.id} icon={item.icon} title={item.title}>
+                <ContentComponent
+                  onOpenFrigobarModal={
+                    item.id === "restaurant" ? openFrigobarModal : undefined
+                  }
+                  onOpenSkyModal={item.id === "sky" ? openSkyModal : undefined}
+                />
+              </Accordion>
+            );
+          })}
         </main>
+
+        <Modal
+          isOpen={!!modalContent}
+          onClose={closeModal}
+          title={modalContent?.title}
+          data={modalContent?.data}
+          note={modalContent?.note}
+          searchable={modalContent?.searchable}
+          searchPlaceholder={modalContent?.searchPlaceholder}
+          customHeaders={modalContent?.customHeaders}
+        />
       </div>
 
-      {/* RODAPÉ */}
       <Footer />
     </div>
   );

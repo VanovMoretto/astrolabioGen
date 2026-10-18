@@ -1,122 +1,103 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import {
   FaFacebookF,
   FaInstagram,
   FaLinkedinIn,
   FaWhatsapp,
 } from "react-icons/fa";
-import { Phone, MapPin, Mail } from "lucide-react";
+import { Phone } from "lucide-react";
+import logoFooter from "../assets/logo-footer.png";
 import styles from "./Footer.module.css";
 
 const Footer: React.FC = () => {
-  const currentYear = new Date().getFullYear();
+  const { t } = useTranslation();
 
   return (
     <footer className={styles.footer}>
-      <div className={styles.footerContainer}>
-        <div className={styles.topSection}>
-          {/* LADO ESQUERDO: Marca e Endereço de POA */}
-          <div className={styles.brandBlock}>
+      <div className={styles.footerContent}>
+        <div className={styles.footerLeft}>
+          <div className={styles.footerLogo}>
             <a
               href="https://www.swangeneration.com.br/"
               target="_blank"
               rel="noopener noreferrer"
-              className={styles.brandTitle}
+              aria-label="Site Swan Generation"
             >
-              SWAN <span>GENERATION</span>
+              <img src={logoFooter} alt="Swan Generation" />
             </a>
-            <p className={styles.tagline}>
-              Hospedagem • Coliving • Coworking | Rede Swan Hotéis
-            </p>
-            <div className={styles.address}>
-              <MapPin size={15} className={styles.contactIcon} />
-              <span>
-                R. 24 de Outubro, 1611 - Auxiliadora, Porto Alegre - RS
-              </span>
-            </div>
           </div>
-
-          {/* LADO DIREITO: Contatos do Generation e Redes Sociais */}
-          <div className={styles.contactsBlock}>
-            <div className={styles.contactList}>
-              <div className={styles.contactItem}>
-                <Phone size={15} className={styles.contactIcon} />
-                <a href="tel:+555133272222">(51) 3327-2222</a>
-                <span>•</span>
-                <a href="tel:08007077106">0800 707 7106</a>
-              </div>
-
-              <div className={styles.contactItem}>
-                <FaWhatsapp size={15} className={styles.contactIcon} />
-                <a
-                  href="https://wa.me/5551992284510"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Recepção: (51) 99228-4510
-                </a>
-              </div>
-
-              <div className={styles.contactItem}>
-                <Mail size={15} className={styles.contactIcon} />
-                <a href="mailto:reservas@swanhoteis.com.br">
-                  reservas@swanhoteis.com.br
-                </a>
-              </div>
-            </div>
-
-            <div className={styles.socialIcons}>
-              <a
-                href="https://www.instagram.com/swangeneration/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram Swan Generation"
-                className={styles.socialLink}
-              >
-                <FaInstagram size={18} />
-              </a>
-              <a
-                href="https://www.facebook.com/swanhoteis/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Facebook Swan Hotéis"
-                className={styles.socialLink}
-              >
-                <FaFacebookF size={16} />
-              </a>
-              <a
-                href="https://www.linkedin.com/company/swanhoteis/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn Swan Hotéis"
-                className={styles.socialLink}
-              >
-                <FaLinkedinIn size={16} />
-              </a>
-            </div>
+          <div className={styles.footerAddress}>
+            <small>R. 24 de Outubro, 1611 - Auxiliadora, Porto Alegre - RS</small>
+          </div>
+          <div className={styles.footerCopyright}>
+            <small>
+              &copy; {new Date().getFullYear()} Swan Generation •{" "}
+              {t("footer.copyright")}
+            </small>
           </div>
         </div>
 
-        <div className={styles.divider} />
+        <div className={styles.separator} />
 
-        {/* BASE: Copyright + CNPJ + Crédito Dev */}
-        <div className={styles.bottomSection}>
-          <small>
-            &copy; {currentYear} Swan Generation (CNPJ: 94.708.096/0001-90).
-            Todos os direitos reservados.
-          </small>
-          <small className={styles.devCredit}>
-            Desenvolvido por{" "}
+        <div className={styles.footerRight}>
+          <div className={styles.socialIcons}>
             <a
-              href="https://github.com/vanovmoretto"
+              href="https://www.facebook.com/swanhoteis/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Facebook Swan Hotéis"
             >
-              Vanov Moretto
+              <FaFacebookF size={20} />
             </a>
-          </small>
+            <a
+              href="https://www.instagram.com/swangeneration/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram Swan Generation"
+            >
+              <FaInstagram size={20} />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/swanhoteis/posts/?feedView=all"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn Swan Hotéis"
+            >
+              <FaLinkedinIn size={20} />
+            </a>
+          </div>
+
+          <div className={styles.phoneContacts}>
+            <div className={styles.contactItem}>
+              <Phone size={16} aria-hidden="true" />
+              <a href="tel:+555133272222">(51) 3327-2222</a>
+            </div>
+
+            <div className={styles.contactItem}>
+              <FaWhatsapp size={16} aria-hidden="true" />
+              <a
+                href="https://wa.me/5551992284510"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                (51) 9 9228-4510
+              </a>
+            </div>
+          </div>
         </div>
       </div>
+
+      <p className={styles.footerDev}>
+        {t("footer.devCredit")}
+        <a
+          href="https://github.com/vanovmoretto"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Vanov Moretto
+        </a>
+      </p>
     </footer>
   );
 };

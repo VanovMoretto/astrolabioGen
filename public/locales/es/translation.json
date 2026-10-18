@@ -1,0 +1,144 @@
+{
+  "loading": "Cargando...",
+  "introText": "El Astrolábio es el directorio oficial de información, normas y políticas de la red Swan Hotéis.\nInspirado en el instrumento que guiaba a los navegantes por las estrellas — entre ellas las de la Constelación del Cisne (Cygnus), que también da origen al nombre Swan, en referencia a la familia Schwan — simboliza precisión, orientación y confianza.\nAl igual que el astrolabio conducía a los exploradores con seguridad, este directorio digital ofrece al huésped una navegación clara y organizada, conectando tradición, tecnología y hospitalidad.",
+  "floating": {
+    "reception": "Recepción",
+    "restaurant": "Restaurante",
+    "receptionAria": "Contactar a Recepción por WhatsApp",
+    "restaurantAria": "Contactar al Restaurante por WhatsApp"
+  },
+  "modal": {
+    "frigobarTitle": "Menú del Minibar",
+    "skyTitle": "Guía de Canales SKY",
+    "skySearchPlaceholder": "Buscar canal o número (VC)...",
+    "searchPlaceholder": "Buscar...",
+    "noResults": "No se encontraron canales.",
+    "table": {
+      "qty": "Cant.",
+      "item": "Producto",
+      "unitPrice": "Valor Unit.",
+      "vc": "VC",
+      "channel": "Todos los Canales",
+      "tech": "Tecnología"
+    }
+  },
+  "frigobar": {
+    "categories": {
+      "drinks": "Bebidas"
+    },
+    "items": {
+      "waterStill": "Agua sin gas",
+      "waterSparkling": "Agua con gas",
+      "coke": "Coca-Cola",
+      "cokeZero": "Coca-Cola Zero",
+      "beerLongNeck": "Cerveza long neck"
+    }
+  },
+  "sky": {
+    "categories": {
+      "open": "Canales Abiertos",
+      "sports": "Deportes",
+      "movies": "Películas y Series",
+      "varieties": "Variedades",
+      "kids": "Infantil",
+      "culture": "Cultura",
+      "news": "Noticias",
+      "international": "Internacional",
+      "courtesy": "Cortesía",
+      "public": "Canales Públicos",
+      "audio": "Audio",
+      "radio": "Radio"
+    }
+  },
+  "footer": {
+    "copyright": "Todos los derechos reservados",
+    "devCredit": "Desarrollado por"
+  },
+  "accordion": {
+    "internet": {
+      "title": "Internet y Teléfonos",
+      "wifiTitle": "Wi-Fi:",
+      "wifiDesc": "Acceso gratuito en todo el hotel.",
+      "wifiNet": "Red: <1>Swan Generation</1>",
+      "wifiLogin": "Inicie sesión en la red y luego utilice:",
+      "wifiUser": "<1>Login: </1>Número de habitación",
+      "wifiPass": "<1>Contraseña: </1>Último apellido en minúsculas",
+      "wifiAltTitle": "Red Alternativa:",
+      "wifiAltNet": "Red: <1>Swan Rede_On</1>",
+      "wifiAltPass": "Contraseña: <1>12345678</1>",
+      "phonesTitle": "Atención y Teléfonos Útiles:",
+      "whatsappReception": "Recepción: <1>(51) 99228-4510</1>",
+      "whatsappRestaurant": "Restaurante: <1>(51) 98400-8942</1>",
+      "phonesHotel": "Teléfono Recepción: <1>(51) 3327-2222</1>",
+      "phonesReservation": "Central de Reservas: <1>0800 707 7106</1>",
+      "noExtensionsNote": "*No disponemos de extensiones en las habitaciones. Nuestra atención interna se realiza directamente vía WhatsApp"
+    },
+    "breakfast": {
+      "title": "Desayuno",
+      "description": "¡Comience bien su día! Nuestro delicioso desayuno se sirve todos los días en el restaurante del hotel, en los siguientes horarios:",
+      "weekdaysTitle": "Lunes a Viernes:",
+      "weekdaysTime": "06:30 a 10:00",
+      "weekendsTitle": "Sábados, Domingos y Feriados:",
+      "weekendsTime": "07:00 a 10:30"
+    },
+    "restaurant": {
+      "title": "Minibar, Restaurante y Room Service",
+      "restaurantTitle": "Gen Street Food and Drink:",
+      "restaurantHours": "Todos los días: 12:00 a 23:00",
+      "roomServiceTitle": "Room Service (Servicio de Habitación):",
+      "roomServiceHours": "Todos los días: 11:30 a 22:30",
+      "menuButton": "Ver Menú",
+      "minibarTitle": "Minibar:",
+      "minibarDesc": "Consulte los artículos y precios de nuestro minibar."
+    },
+    "checkin": {
+      "title": "Check-in y Check-out",
+      "checkinTitle": "Check-in:",
+      "checkinTime": "a partir de las 15:00.",
+      "checkoutTitle": "Check-out:",
+      "checkoutTime": "hasta las 12:00 (mediodía).",
+      "earlyCheckinTitle": "Check-in anticipado:",
+      "earlyCheckinDesc": "sujeto a disponibilidad y puede implicar costos adicionales.",
+      "lateCheckoutTitle": "Late check-out:",
+      "lateCheckoutDesc": "hasta las 16:00: se cobrará el valor correspondiente a media tarifa diaria vigente; después de las 16:00: se cobrará una tarifa diaria completa, permitindo la permanencia hasta el mediodía del día siguiente.",
+      "availabilityNote": "*Sujeto a disponibilidad."
+    },
+    "sky": {
+      "title": "Guía de Canales SKY",
+      "description": "Consulte nuestra lista de canales:",
+      "button": "Ver Guía"
+    },
+    "services": {
+      "title": "Servicios",
+      "parkingTitle": "Estacionamiento:",
+      "parkingDesc": "Valor: R$ 30,00 por día / por auto.",
+      "laundryTitle": "Lavandería:",
+      "laundryDesc1": "No disponemos de lavandería en el hotel. Sin embargo, recomendamos la <1>Lavanderia Quatro Estações</1>.",
+      "mapButton": "Ver en el mapa",
+      "laundryDesc2": "Para pagos facturados, enviamos los servicios a la <1>Lavanderia Golfinho</1>."
+    },
+    "policies": {
+      "title": "Políticas del Hotel",
+      "rulesTitle": "Reglas de la Habitación (UH)",
+      "nonSmokingTitle": "No fumadores",
+      "nonSmokingDesc": "Le recordamos que, para garantizar una estadía confortable a todos nuestros huéspedes, está estrictamente prohibido fumar cigarrillos o cualquier derivado dentro de las habitaciones. En caso de incumplimiento, se cobrará una tasa de higienización de R$ 250,00.",
+      "linensTitle": "Uso incorrecto de la ropa de cama y baño",
+      "linensDesc": "El uso inadecuado de la ropa de cama/baño, muebles o utensilios podrá generar costos adicionales. Si las piezas presentan suciedad excesiva o daños, se cobrará un valor proporcional a la gravedad, incluso si se constata después del check-out.",
+      "lostKeyTitle": "Pérdida de Llave",
+      "lostKeyDesc": "En caso de pérdida o extravío de la tarjeta magnética, se cobrará una tasa de R$ 10,00.",
+      "minorsTitle": "Alojamiento de Menores",
+      "minorsP1": "De acuerdo con el Estatuto del Niño y del Adolescente de Brasil (Ley 8.069/90, Art. 82), está prohibido el alojamiento de niños o adolescentes en hoteles o establecimientos similares, salvo que estén autorizados o acompañados por ambos padres o tutor legal, o presenten autorización del Juzgado de Menores.",
+      "minorsP2": "En el momento del check-in, es obligatorio presentar el documento original de identificación en presencia de los padres o autorización por escrito cuando estén acompañados por un responsable debidamente identificado.",
+      "guestsTitle": "Política de Acompañantes",
+      "guestsP1": "El registro de acompañantes en la recepción es obligatorio por razones de seguridad personal y de los demás huéspedes, aplicándose el cargo correspondiente. En las áreas sociales no es necesario realizar el registro.",
+      "petTitle": "Política Pet Friendly",
+      "petLi1": "Se permite el alojamiento de una mascota por apartamento.",
+      "petLi2": "Es obligatorio presentar el carnet de vacunación al día en el momento del check-in.",
+      "petLi3": "La limpieza del apartamento debe ser programada por el tutor y los artículos de cama/baño del hotel no pueden ser utilizados para la mascota.",
+      "petLi4": "El tutor es responsable de limpiar los residuos de la mascota y velar por su silencio, así como de cualquier daño material o físico causado por el animal al apartamento, a terceros o a las instalaciones del hotel.",
+      "petLi5": "No se permitirá que la mascota permanezca sola en el apartamento por períodos prolongados (más de 4 horas).",
+      "petLi6": "Al circular por las áreas sociales, la mascota debe estar con correa, en brazos o en cajas/bolsas de transporte adecuadas. La permanencia se restringe al apartamento. Le pedimos mantener a su mascota alejada de las áreas de alimentos, bebidas, eventos, piscina y gimnasio.",
+      "petLi7": "La limpieza del apartamento no se realizará si su mascota está presente en la habitación."
+    }
+  }
+}

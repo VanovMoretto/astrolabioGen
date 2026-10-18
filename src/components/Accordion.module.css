@@ -1,0 +1,105 @@
+.accordion {
+  width: 100%;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  background-color: transparent;
+  border: none;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.3s ease;
+}
+
+/* Efeito iluminado no card inteiro quando aberto */
+.accordion:has(.open) {
+  box-shadow: 0 6px 20px rgba(58, 186, 203, 0.35);
+}
+
+.accordionHeader {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 16px 20px;
+  color: var(--color-text-on-primary);
+  border: none;
+  background-color: var(--color-primary);
+  cursor: pointer;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.25s ease, box-shadow 0.25s ease, filter 0.2s ease;
+}
+
+.accordionHeader:hover {
+  filter: brightness(1.06);
+}
+
+/* Barra superior em Ciano Iluminado quando aberto */
+.accordionHeader.open {
+  background-color: var(--color-secondary);
+  box-shadow: 0 4px 14px rgba(58, 186, 203, 0.45);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.22); /* Garante leitura nítida do branco no ciano */
+}
+
+.icon {
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  color: var(--color-text-on-primary);
+  transition: filter 0.25s ease;
+}
+
+.accordionHeader.open .icon {
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
+}
+
+.title {
+  flex-grow: 1;
+}
+
+.chevron {
+  color: var(--color-text-on-primary);
+  transition: transform 0.4s ease-in-out, filter 0.25s ease;
+}
+
+.chevron.open {
+  transform: rotate(180deg);
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
+}
+
+.accordionContent {
+  overflow: hidden;
+  background-color: var(--color-surface);
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.4s ease-in-out;
+}
+
+.accordionContent.open {
+  grid-template-rows: 1fr;
+}
+
+.contentPadding {
+  padding: 0 20px;
+  line-height: 1.6;
+  color: var(--color-text-body);
+  min-height: 0;
+  transition: padding 0.4s ease-in-out;
+}
+
+.accordionContent.open .contentPadding {
+  padding: 16px 20px 20px 20px;
+}
+
+.contentPadding p {
+  margin: 0 0 12px 0;
+}
+
+.contentPadding p:last-child {
+  margin-bottom: 0;
+}
+
+.contentPadding strong {
+  color: var(--color-text-strong);
+  font-weight: 700;
+}

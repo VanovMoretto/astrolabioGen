@@ -1,0 +1,144 @@
+{
+  "loading": "加载中...",
+  "introText": "Astrolábio 是 Swan Hotéis 网络的官方信息、规定和政策目录。\n它灵感来源于通过星星（包括天鹅座 Cygnus 中的星星，天鹅座也是 Swan 名字的来源，以纪念 Schwan 家族）指引航海家的仪器，象征着精确、方向和信任。\n正如星盘安全地引导探险家一样，这个数字目录为客人提供了清晰、有组织的导航，连接了传统、技术和热情好客。",
+  "floating": {
+    "reception": "前台",
+    "restaurant": "餐厅",
+    "receptionAria": "通过 WhatsApp 联系前台",
+    "restaurantAria": "通过 WhatsApp 联系餐厅"
+  },
+  "modal": {
+    "frigobarTitle": "迷你吧菜单",
+    "skyTitle": "SKY 电视节目指南",
+    "skySearchPlaceholder": "搜索频道名称或频道号 (VC)...",
+    "searchPlaceholder": "搜索...",
+    "noResults": "未找到相关频道。",
+    "table": {
+      "qty": "数量",
+      "item": "产品",
+      "unitPrice": "单价",
+      "vc": "频道号",
+      "channel": "所有频道",
+      "tech": "画质/类型"
+    }
+  },
+  "frigobar": {
+    "categories": {
+      "drinks": "饮品"
+    },
+    "items": {
+      "waterStill": "矿泉水（无气）",
+      "waterSparkling": "气泡水",
+      "coke": "可口可乐",
+      "cokeZero": "零度可口可乐",
+      "beerLongNeck": "瓶装啤酒 (Long Neck)"
+    }
+  },
+  "sky": {
+    "categories": {
+      "open": "公共频道",
+      "sports": "体育频道",
+      "movies": "电影与剧集",
+      "varieties": "综艺与生活",
+      "kids": "少儿频道",
+      "culture": "文化与纪实",
+      "news": "新闻频道",
+      "international": "国际频道",
+      "courtesy": "免费频道",
+      "public": "公共机构频道",
+      "audio": "音乐音频",
+      "radio": "广播电台"
+    }
+  },
+  "footer": {
+    "copyright": "版权所有",
+    "devCredit": "开发者"
+  },
+  "accordion": {
+    "internet": {
+      "title": "网络和电话",
+      "wifiTitle": "Wi-Fi:",
+      "wifiDesc": "酒店全程免费网络。",
+      "wifiNet": "网络: <1>Swan Generation</1>",
+      "wifiLogin": "请登录网络，然后使用:",
+      "wifiUser": "<1>登录名: </1>房间号",
+      "wifiPass": "<1>密码: </1>姓氏全拼（小写）",
+      "wifiAltTitle": "备用网络:",
+      "wifiAltNet": "网络: <1>Swan Rede_On</1>",
+      "wifiAltPass": "密码: <1>12345678</1>",
+      "phonesTitle": "服务与实用电话:",
+      "whatsappReception": "前台: <1>(51) 99228-4510</1>",
+      "whatsappRestaurant": "餐厅: <1>(51) 98400-8942</1>",
+      "phonesHotel": "前台电话: <1>(51) 3327-2222</1>",
+      "phonesReservation": "预订中心: <1>0800 707 7106</1>",
+      "noExtensionsNote": "*客房内不设电话分机，内部服务请直接通过 WhatsApp 联系"
+    },
+    "breakfast": {
+      "title": "早餐",
+      "description": "开启美好的一天！酒店餐厅每日供应美味早餐，供应时间如下：",
+      "weekdaysTitle": "周一至周五:",
+      "weekdaysTime": "06:30 至 10:00",
+      "weekendsTitle": "周六、周日及节假日:",
+      "weekendsTime": "07:00 至 10:30"
+    },
+    "restaurant": {
+      "title": "迷你吧、餐厅与客房送餐",
+      "restaurantTitle": "Gen Street Food and Drink (餐厅):",
+      "restaurantHours": "每天: 12:00 至 23:00",
+      "roomServiceTitle": "Room Service (客房送餐服务):",
+      "roomServiceHours": "每天: 11:30 至 22:30",
+      "menuButton": "查看菜单",
+      "minibarTitle": "迷你吧:",
+      "minibarDesc": "查看我们迷你吧的物品和价格。"
+    },
+    "checkin": {
+      "title": "入住和退房",
+      "checkinTitle": "入住时间:",
+      "checkinTime": "15:00 起。",
+      "checkoutTitle": "退房时间:",
+      "checkoutTime": "12:00（中午）前。",
+      "earlyCheckinTitle": "提前入住:",
+      "earlyCheckinDesc": "视客房供应情况而定，可能会产生额外费用。",
+      "lateCheckoutTitle": "延迟退房:",
+      "lateCheckoutDesc": "16:00 前：收取当天的半日房费；16:00 后：收取全日房费，可停留至次日中午 12:00。",
+      "availabilityNote": "*视客房供应情况而定。"
+    },
+    "sky": {
+      "title": "SKY 电视节目指南",
+      "description": "查看我们的电视频道列表:",
+      "button": "查看指南"
+    },
+    "services": {
+      "title": "服务",
+      "parkingTitle": "停车场:",
+      "parkingDesc": "费用：每辆车每天 R$ 30.00。",
+      "laundryTitle": "洗衣服务:",
+      "laundryDesc1": "酒店内不设洗衣房，但我们推荐附近的 <1>Lavanderia Quatro Estações</1> 洗衣店。",
+      "mapButton": "在地图上查看",
+      "laundryDesc2": "如需挂账结算，我们可将衣物送至 <1>Lavanderia Golfinho</1> 洗衣店处理。"
+    },
+    "policies": {
+      "title": "酒店政策",
+      "rulesTitle": "客房规则",
+      "nonSmokingTitle": "禁止吸烟",
+      "nonSmokingDesc": "为了确保所有客人的舒适住宿，客房内严禁吸烟或使用任何烟草制品。若违反规定，将收取 R$ 250.00 的清洁费。",
+      "linensTitle": "布草及设施不当使用",
+      "linensDesc": "不当使用床品、毛巾、家具或器具可能会产生额外费用。若出现严重污渍或损坏，即使在退房后发现，也将根据严重程度收取相应赔偿费用。",
+      "lostKeyTitle": "房卡丢失",
+      "lostKeyDesc": "若房卡丢失或遗失，将收取 R$ 10.00 的工本费。",
+      "minorsTitle": "未成年人入住政策",
+      "minorsP1": "根据巴西《儿童和青少年法》（第 8.069/90 号法律第 82 条），禁止未成年人单独入住酒店，除非由父母双方或法定监护人陪同或授权，或持有未成年人法院签发的许可文件。",
+      "minorsP2": "办理入住时，必须在父母在场的情况下出示未成年人的身份证件原件；若由法定监护人陪同，则须出示书面授权书。此规定旨在保护未成年人安全。",
+      "guestsTitle": "访客与随行人员政策",
+      "guestsP1": "出于您和其他客人的安全考虑，随行访客必须在前台登记并支付相应费用。在公共社交区域无需登记。",
+      "petTitle": "宠物友好政策 (Pet Friendly)",
+      "petLi1": "每间客房允许携带一只宠物入住。",
+      "petLi2": "办理入住时必须出示宠物在有效期内的疫苗接种卡。",
+      "petLi3": "客房清洁须由宠物主人提前预约，且酒店床品和毛巾不得供宠物使用。",
+      "petLi4": "宠物主人须负责清理宠物排泄物并保持安静，同时对宠物给客房、第三方或酒店设施造成的任何物质或人身损害承担全部责任。",
+      "petLi5": "禁止将宠物单独留在客房内超过 4 小时。",
+      "petLi6": "在公共区域活动时，宠物必须系牵引绳、抱在怀中或置于专用宠物包/箱内。宠物仅限在客房内停留，请勿带入餐饮区、活动区、泳池和健身房。",
+      "petLi7": "当您的宠物在客房内时，酒店将不进行客房清洁服务。"
+    }
+  }
+}

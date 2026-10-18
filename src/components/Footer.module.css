@@ -1,180 +1,147 @@
 .footer {
-  background-color: var(--bg-footer);
-  border-top: 1px solid var(--border-subtle);
-  color: var(--text-secondary);
-  padding: 40px 20px 28px 20px;
-  margin-top: 40px;
-}
-
-.footerContainer {
-  max-width: 800px;
-  margin: 0 auto;
+  background-color: var(--color-primary);
+  color: var(--color-text-on-primary);
+  padding: 36px 24px 24px 24px;
+  margin-top: 48px;
   display: flex;
   flex-direction: column;
-  gap: 28px;
-}
-
-.topSection {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
   align-items: center;
   text-align: center;
+  gap: 20px;
 }
 
-/* BLOCO DA MARCA E ENDEREÇO */
-.brandBlock {
+.footerContent {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 28px;
+  width: 100%;
+  max-width: 900px;
+}
+
+.footerLeft {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
 }
 
-.brandTitle {
-  font-family: var(--font-heading);
-  font-size: 1.35rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  text-decoration: none;
-  letter-spacing: -0.5px;
+.footerLogo img {
+  width: 160px;
+  height: auto;
 }
 
-.brandTitle span {
-  color: var(--accent-primary);
-}
-
-.tagline {
+.footerAddress {
   font-size: 0.8rem;
-  color: var(--text-secondary);
+  opacity: 0.9;
 }
 
-.address {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
+.footerCopyright {
   font-size: 0.8rem;
-  color: var(--text-secondary);
-  margin-top: 4px;
+  opacity: 0.8;
 }
 
-/* BLOCO DE CONTATOS E REDES */
-.contactsBlock {
+.footerRight {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 14px;
+  gap: 18px;
 }
 
-.contactList {
+.phoneContacts {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 8px;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
 }
 
 .contactItem {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 8px;
-}
-
-.contactIcon {
-  color: var(--accent-primary);
-  flex-shrink: 0;
+  color: var(--color-text-on-primary);
 }
 
 .contactItem a {
-  color: var(--text-primary);
+  color: var(--color-text-on-primary);
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .contactItem a:hover {
-  color: var(--accent-primary);
+  color: var(--color-secondary);
+  text-decoration: underline;
 }
 
 .socialIcons {
   display: flex;
-  gap: 14px;
-  margin-top: 4px;
+  gap: 20px;
 }
 
-.socialLink {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background-color: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  color: var(--text-primary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s ease;
+.socialIcons a {
+  color: var(--color-text-on-primary);
+  transition: color 0.2s ease, transform 0.2s ease;
 }
 
-.socialLink:hover {
-  background-color: var(--accent-primary);
-  border-color: var(--accent-primary);
-  color: #ffffff;
+.socialIcons a:hover {
+  color: var(--color-secondary);
   transform: translateY(-2px);
 }
 
-/* DIVISOR E BASE DE COPYRIGHT */
-.divider {
+.separator {
+  display: block;
   width: 100%;
+  max-width: 300px;
   height: 1px;
-  background-color: var(--border-subtle);
+  background-color: var(--color-text-on-primary);
+  opacity: 0.35;
+  margin: 6px 0;
 }
 
-.bottomSection {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
-  text-align: center;
-  font-size: 0.75rem;
-  color: var(--text-secondary);
+.footerDev {
+  font-size: 0.72rem;
+  opacity: 0.85;
 }
 
-.devCredit a {
-  color: var(--text-primary);
+.footerDev a {
+  color: var(--color-text-on-primary);
   font-weight: 600;
   text-decoration: none;
+  margin-left: 4px;
 }
 
-.devCredit a:hover {
-  color: var(--accent-primary);
+.footerDev a:hover {
+  color: var(--color-secondary);
+  text-decoration: underline;
 }
 
-/* RESPONSIVIDADE DESKTOP */
 @media (min-width: 768px) {
-  .topSection {
+  .footerContent {
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    text-align: left;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
   }
 
-  .brandBlock {
-    align-items: flex-start;
+  /* flex: 1 nos dois lados garante que a barra vertical (.separator) fique exatamente no centro */
+  .footerLeft {
+    flex: 1;
+    align-items: center;
+    text-align: center;
   }
 
-  .address {
-    justify-content: flex-start;
+  .footerRight {
+    flex: 1;
+    align-items: center;
+    padding-left: 0;
   }
 
-  .contactsBlock {
-    align-items: flex-end;
-  }
-
-  .contactList {
-    align-items: flex-end;
-  }
-
-  .bottomSection {
-    flex-direction: row;
-    justify-content: space-between;
+  .separator {
+    width: 1px;
+    height: 100px;
+    max-width: none;
+    margin: 0 32px;
+    flex-shrink: 0;
   }
 }

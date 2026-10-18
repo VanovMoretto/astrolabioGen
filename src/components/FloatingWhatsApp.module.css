@@ -1,0 +1,72 @@
+.floatingContainer {
+  position: fixed;
+  top: var(--floating-top-desktop);
+  right: 20px;
+  z-index: 900;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+.floatingBtn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  background-color: var(--color-primary);
+  color: var(--color-text-on-primary);
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 999px;
+  box-shadow: 0 4px 14px rgba(124, 118, 200, 0.4);
+  border: 2px solid #ffffff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: background-color 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+}
+
+.floatingBtn:hover {
+  background-color: var(--color-secondary);
+  transform: translateX(-4px);
+  box-shadow: 0 6px 18px rgba(58, 186, 203, 0.45);
+}
+
+.label {
+  white-space: nowrap;
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ==========================================
+   COMPORTAMENTO MOBILE (Apenas Ícones)
+   ========================================== */
+@media (max-width: 767px) {
+  .floatingContainer {
+    top: var(--floating-top-mobile);
+    right: 8px;
+    gap: 8px;
+  }
+
+  .floatingBtn {
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border-radius: 50%;
+    justify-content: center;
+  }
+
+  .floatingBtn:hover {
+    transform: scale(1.05);
+  }
+
+  /* Esconde o texto no mobile, deixando apenas os ícones */
+  .label {
+    display: none;
+  }
+}

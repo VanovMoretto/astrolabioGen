@@ -1,0 +1,144 @@
+{
+  "loading": "Loading...",
+  "introText": "The Astrolábio is the official directory for information, regulations, and policies of the Swan Hotéis network.\nInspired by the instrument that guided navigators by the stars — among them those of the Cygnus Constellation, which also gives rise to the name Swan, in reference to the Schwan family — it symbolizes precision, orientation, and trust.\nJust as the astrolabe safely guided explorers, this digital directory offers the guest clear and organized navigation, connecting tradition, technology, and hospitality.",
+  "floating": {
+    "reception": "Front Desk",
+    "restaurant": "Restaurant",
+    "receptionAria": "Chat with Front Desk on WhatsApp",
+    "restaurantAria": "Chat with Restaurant on WhatsApp"
+  },
+  "modal": {
+    "frigobarTitle": "Minibar Menu",
+    "skyTitle": "SKY Channel Guide",
+    "skySearchPlaceholder": "Search channel or number (VC)...",
+    "searchPlaceholder": "Search...",
+    "noResults": "No channels found.",
+    "table": {
+      "qty": "Qty",
+      "item": "Product",
+      "unitPrice": "Unit Price",
+      "vc": "VC",
+      "channel": "All Channels",
+      "tech": "Tech"
+    }
+  },
+  "frigobar": {
+    "categories": {
+      "drinks": "Drinks"
+    },
+    "items": {
+      "waterStill": "Still water",
+      "waterSparkling": "Sparkling water",
+      "coke": "Coca-Cola",
+      "cokeZero": "Coca-Cola Zero",
+      "beerLongNeck": "Long neck beer"
+    }
+  },
+  "sky": {
+    "categories": {
+      "open": "Broadcast Channels",
+      "sports": "Sports",
+      "movies": "Movies & Series",
+      "varieties": "Varieties",
+      "kids": "Kids",
+      "culture": "Culture",
+      "news": "News",
+      "international": "International",
+      "courtesy": "Courtesy",
+      "public": "Public Channels",
+      "audio": "Audio",
+      "radio": "Radio"
+    }
+  },
+  "footer": {
+    "copyright": "All rights reserved",
+    "devCredit": "Developed by"
+  },
+  "accordion": {
+    "internet": {
+      "title": "Internet & Phones",
+      "wifiTitle": "Wi-Fi:",
+      "wifiDesc": "Free access throughout the hotel.",
+      "wifiNet": "Network: <1>Swan Generation</1>",
+      "wifiLogin": "Log in to the network, then use:",
+      "wifiUser": "<1>Login: </1>Room number",
+      "wifiPass": "<1>Password: </1>Last surname in lowercase",
+      "wifiAltTitle": "Alternative Network:",
+      "wifiAltNet": "Network: <1>Swan Rede_On</1>",
+      "wifiAltPass": "Password: <1>12345678</1>",
+      "phonesTitle": "Useful Contacts & Phones:",
+      "whatsappReception": "Front Desk: <1>(51) 99228-4510</1>",
+      "whatsappRestaurant": "Restaurant: <1>(51) 98400-8942</1>",
+      "phonesHotel": "Front Desk Phone: <1>(51) 3327-2222</1>",
+      "phonesReservation": "Reservation Center: <1>0800 707 7106</1>",
+      "noExtensionsNote": "*We do not have room extensions. Internal assistance is provided directly via WhatsApp"
+    },
+    "breakfast": {
+      "title": "Breakfast",
+      "description": "Start your day right! Our delicious breakfast is served daily at the hotel restaurant at the following times:",
+      "weekdaysTitle": "Monday to Friday:",
+      "weekdaysTime": "06:30 AM to 10:00 AM",
+      "weekendsTitle": "Saturdays, Sundays, and Holidays:",
+      "weekendsTime": "07:00 AM to 10:30 AM"
+    },
+    "restaurant": {
+      "title": "Minibar, Restaurant and Room Service",
+      "restaurantTitle": "Gen Street Food and Drink:",
+      "restaurantHours": "Every day: 12:00 PM to 11:00 PM",
+      "roomServiceTitle": "Room Service:",
+      "roomServiceHours": "Every day: 11:30 AM to 10:30 PM",
+      "menuButton": "View Menu",
+      "minibarTitle": "Minibar:",
+      "minibarDesc": "Check the items and prices of our minibar."
+    },
+    "checkin": {
+      "title": "Check-in & Check-out",
+      "checkinTitle": "Check-in:",
+      "checkinTime": "from 03:00 PM.",
+      "checkoutTitle": "Check-out:",
+      "checkoutTime": "until 12:00 PM (noon).",
+      "earlyCheckinTitle": "Early check-in:",
+      "earlyCheckinDesc": "subject to availability and may incur additional charges.",
+      "lateCheckoutTitle": "Late check-out:",
+      "lateCheckoutDesc": "until 04:00 PM: half of the current daily rate will be charged; after 04:00 PM: a full daily rate will be charged, allowing stay until 12:00 PM the following day.",
+      "availabilityNote": "*Subject to availability."
+    },
+    "sky": {
+      "title": "SKY Channel Guide",
+      "description": "Check out our channel list:",
+      "button": "View Guide"
+    },
+    "services": {
+      "title": "Services",
+      "parkingTitle": "Parking:",
+      "parkingDesc": "Rate: R$ 30.00 per day / per car.",
+      "laundryTitle": "Laundry:",
+      "laundryDesc1": "We do not have an on-site laundry. However, we recommend <1>Lavanderia Quatro Estações</1> nearby.",
+      "mapButton": "View on map",
+      "laundryDesc2": "For billed payments, we forward laundry services to <1>Lavanderia Golfinho</1>."
+    },
+    "policies": {
+      "title": "Hotel Policies",
+      "rulesTitle": "Room Rules (Housing Unit)",
+      "nonSmokingTitle": "Non-smoking",
+      "nonSmokingDesc": "To ensure a comfortable stay for all our guests, smoking cigarettes or any derivatives inside the rooms is strictly prohibited. Failure to comply will result in a R$ 250.00 sanitization fee.",
+      "linensTitle": "Improper use of linens",
+      "linensDesc": "Improper use of bed/bath linens, furniture, or utensils may incur additional charges. In case of excessive dirt or damage, a fee proportional to the severity will be charged, even if identified after check-out.",
+      "lostKeyTitle": "Lost Key",
+      "lostKeyDesc": "In case of a lost or misplaced key card, a R$ 10.00 replacement fee will be charged.",
+      "minorsTitle": "Accommodation of Minors",
+      "minorsP1": "According to the Brazilian Child and Adolescent Statute (Law 8.069/90, Art. 82), the accommodation of children or adolescents in a hotel or similar establishment is prohibited unless authorized or accompanied by both parents or a legal guardian, or holding a Juvenile Court authorization.",
+      "minorsP2": "At check-in, presenting the minor's original ID in the presence of parents or a notarized written authorization when accompanied by a duly identified guardian is mandatory to protect the child or adolescent.",
+      "guestsTitle": "Visitor & Companion Policy",
+      "guestsP1": "Registering companions at the front desk is mandatory for personal and guest safety, and the corresponding additional fee will apply. Registration is not required in social areas.",
+      "petTitle": "Pet Friendly Policy",
+      "petLi1": "One pet per apartment is allowed.",
+      "petLi2": "Presenting the pet's up-to-date vaccination card at check-in is mandatory.",
+      "petLi3": "Room cleaning must be scheduled by the owner, and hotel linens cannot be used for the pet.",
+      "petLi4": "The owner is responsible for cleaning up pet waste and keeping the pet quiet, as well as for any material or physical damage caused by the animal to the apartment, third parties, or hotel premises.",
+      "petLi5": "Pets are not allowed to remain unattended in the apartment for long periods (more than 4 hours).",
+      "petLi6": "When in social areas, the pet must be on a leash, held, or in a suitable carrier. Pet stay is restricted to the apartment. Please keep your pet away from food, beverage, event, pool, and gym areas.",
+      "petLi7": "Room cleaning will not be performed while your pet is inside the apartment."
+    }
+  }
+}

@@ -1,38 +1,35 @@
-/* Importando Space Grotesk (Títulos modernos) e Plus Jakarta Sans (Corpo legível) */
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import 'flag-icons/css/flag-icons.min.css';
 
 :root {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
   /* ==========================================
-     PALETA SWAN GENERATION (DESIGN TOKENS)
+     PALETA SWAN GENERATION
      ========================================== */
-  --bg-main: #121214;           /* Fundo principal (Carbono urbano) */
-  --bg-surface: #1c1c21;        /* Fundo dos Acordeões fechados / Cards */
-  --bg-surface-elevated: #26262d; /* Fundo ao passar o mouse ou SubAccordion */
-  --bg-footer: #0b0b0d;         /* Fundo do Footer (mais escuro para contraste) */
+  --gen-purple: #7c76c8;        /* Primary: Acordeões, Footer e Destaques */
+  --gen-purple-dark: #5e58b0;   /* Variação mais escura para melhor leitura em links/strong */
+  --gen-cyan: #3abacb;          /* Secondary: Hover, detalhes ativos e interações */
+  --gen-bg: #eeeeee;            /* Background principal da página */
 
-  /* Cor de destaque (Identidade jovem/viva do Generation) */
-  --accent-primary: #ff5a36;    /* Laranja/Coral urbano (fácil de trocar aqui) */
-  --accent-secondary: #00e5ff;  /* Detalhe secundário opcional */
-  --accent-soft: rgba(255, 90, 54, 0.12);
+  /* Variáveis Semânticas do Tema */
+  --color-primary: var(--gen-purple);
+  --color-secondary: var(--gen-cyan);
+  --color-background: var(--gen-bg);
+  --color-surface: #ffffff;     /* Fundo interno do Accordion aberto */
+  --color-surface-hover: #f7f7fb;
+  --color-border: #dcdce6;
 
-  /* Textos */
-  --text-primary: #f4f4f6;      /* Branco suave para títulos e textos principais */
-  --text-secondary: #a1a1aa;    /* Cinza claro para textos de apoio e descrições */
-  --text-inverse: #121214;      /* Texto escuro para botões com fundo vibrante */
+  /* Cores de Texto */
+  --color-text-body: #2b2b36;   /* Grafite escuro para leitura confortável no #eeeeee e #ffffff */
+  --color-text-strong: var(--gen-purple-dark);
+  --color-text-on-primary: #ffffff;
 
-  /* Bordas e Divisores */
-  --border-subtle: rgba(255, 255, 255, 0.08);
-  --border-accent: rgba(255, 90, 54, 0.35);
-
-  /* Tipografia */
-  --font-heading: 'Space Grotesk', sans-serif;
-  --font-body: 'Plus Jakarta Sans', sans-serif;
-
-  /* Geometria e Efeitos */
-  --radius-sm: 8px;
-  --radius-md: 12px;
-  --radius-lg: 16px;
-  --shadow-card: 0 8px 24px rgba(0, 0, 0, 0.35);
+  /* Posição vertical dos botões flutuantes (1º terço da tela) */
+  --floating-top-desktop: 28%;
+  --floating-top-mobile: 28%;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -42,24 +39,15 @@
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 body {
+  margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  font-family: var(--font-body);
-  background-color: var(--bg-main);
-  color: var(--text-primary);
-  line-height: 1.6;
-  /* Detalhe sutil de luz no topo para dar profundidade moderna */
-  background-image: radial-gradient(
-    circle at 50% 0%,
-    rgba(255, 90, 54, 0.08) 0%,
-    transparent 50%
-  );
-  background-attachment: fixed;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text-body);
 }
 
 #root {
@@ -75,30 +63,21 @@ div {
   -webkit-tap-highlight-color: transparent;
 }
 
-/* Botão primário global com pegada moderna */
 .button-primary {
-  background-color: var(--accent-primary);
-  color: #ffffff;
+  background-color: var(--color-primary);
+  color: var(--color-text-on-primary);
   border: none;
-  border-radius: var(--radius-sm);
-  padding: 12px 20px;
+  border-radius: 6px;
+  padding: 10px 16px;
   font-size: 0.9rem;
   font-weight: 600;
-  font-family: var(--font-body);
+  font-family: 'Poppins', sans-serif;
   cursor: pointer;
-  transition: transform 0.15s ease, filter 0.2s ease;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+  margin: 5px;
 }
 
 .button-primary:hover {
-  filter: brightness(1.1);
+  background-color: var(--color-secondary);
   transform: translateY(-1px);
-}
-
-.button-primary:active {
-  transform: translateY(0);
 }
