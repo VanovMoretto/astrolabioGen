@@ -1,0 +1,180 @@
+.footer {
+  background-color: var(--bg-footer);
+  border-top: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  padding: 40px 20px 28px 20px;
+  margin-top: 40px;
+}
+
+.footerContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.topSection {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  text-align: center;
+}
+
+/* BLOCO DA MARCA E ENDEREÇO */
+.brandBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.brandTitle {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-decoration: none;
+  letter-spacing: -0.5px;
+}
+
+.brandTitle span {
+  color: var(--accent-primary);
+}
+
+.tagline {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.address {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+
+/* BLOCO DE CONTATOS E REDES */
+.contactsBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.85rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.contactIcon {
+  color: var(--accent-primary);
+  flex-shrink: 0;
+}
+
+.contactItem a {
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contactItem a:hover {
+  color: var(--accent-primary);
+}
+
+.socialIcons {
+  display: flex;
+  gap: 14px;
+  margin-top: 4px;
+}
+
+.socialLink {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.socialLink:hover {
+  background-color: var(--accent-primary);
+  border-color: var(--accent-primary);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* DIVISOR E BASE DE COPYRIGHT */
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--border-subtle);
+}
+
+.bottomSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.devCredit a {
+  color: var(--text-primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.devCredit a:hover {
+  color: var(--accent-primary);
+}
+
+/* RESPONSIVIDADE DESKTOP */
+@media (min-width: 768px) {
+  .topSection {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .brandBlock {
+    align-items: flex-start;
+  }
+
+  .address {
+    justify-content: flex-start;
+  }
+
+  .contactsBlock {
+    align-items: flex-end;
+  }
+
+  .contactList {
+    align-items: flex-end;
+  }
+
+  .bottomSection {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

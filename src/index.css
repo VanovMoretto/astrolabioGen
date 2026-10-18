@@ -1,0 +1,104 @@
+/* Importando Space Grotesk (Títulos modernos) e Plus Jakarta Sans (Corpo legível) */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap');
+
+:root {
+  /* ==========================================
+     PALETA SWAN GENERATION (DESIGN TOKENS)
+     ========================================== */
+  --bg-main: #121214;           /* Fundo principal (Carbono urbano) */
+  --bg-surface: #1c1c21;        /* Fundo dos Acordeões fechados / Cards */
+  --bg-surface-elevated: #26262d; /* Fundo ao passar o mouse ou SubAccordion */
+  --bg-footer: #0b0b0d;         /* Fundo do Footer (mais escuro para contraste) */
+
+  /* Cor de destaque (Identidade jovem/viva do Generation) */
+  --accent-primary: #ff5a36;    /* Laranja/Coral urbano (fácil de trocar aqui) */
+  --accent-secondary: #00e5ff;  /* Detalhe secundário opcional */
+  --accent-soft: rgba(255, 90, 54, 0.12);
+
+  /* Textos */
+  --text-primary: #f4f4f6;      /* Branco suave para títulos e textos principais */
+  --text-secondary: #a1a1aa;    /* Cinza claro para textos de apoio e descrições */
+  --text-inverse: #121214;      /* Texto escuro para botões com fundo vibrante */
+
+  /* Bordas e Divisores */
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-accent: rgba(255, 90, 54, 0.35);
+
+  /* Tipografia */
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+
+  /* Geometria e Efeitos */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --shadow-card: 0 8px 24px rgba(0, 0, 0, 0.35);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: var(--font-body);
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  line-height: 1.6;
+  /* Detalhe sutil de luz no topo para dar profundidade moderna */
+  background-image: radial-gradient(
+    circle at 50% 0%,
+    rgba(255, 90, 54, 0.08) 0%,
+    transparent 50%
+  );
+  background-attachment: fixed;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+button,
+a,
+img,
+div {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Botão primário global com pegada moderna */
+.button-primary {
+  background-color: var(--accent-primary);
+  color: #ffffff;
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 12px 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: var(--font-body);
+  cursor: pointer;
+  transition: transform 0.15s ease, filter 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.button-primary:hover {
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+}
+
+.button-primary:active {
+  transform: translateY(0);
+}

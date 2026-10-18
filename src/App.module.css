@@ -1,0 +1,147 @@
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.appContainer {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 24px 20px 40px 20px;
+  flex: 1; /* Empurra o footer sempre para o rodapé mesmo com pouco conteúdo */
+}
+
+/* HEADER / LOGO */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 24px 0 28px 0;
+}
+
+.badgeGen {
+  display: inline-block;
+  background-color: var(--accent-soft);
+  color: var(--accent-primary);
+  border: 1px solid var(--border-accent);
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: var(--text-primary);
+}
+
+.titleHighlight {
+  color: var(--accent-primary);
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+
+/* TEXTO INTRODUTÓRIO */
+.introCard {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+  margin-bottom: 24px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  text-align: left;
+  box-shadow: var(--shadow-card);
+}
+
+/* BARRA DE AÇÕES RÁPIDAS (Diferencial para o Generation que não usa ramal) */
+.quickActionsSection {
+  margin-bottom: 28px;
+}
+
+.sectionLabel {
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+  display: block;
+}
+
+.quickActionsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.quickActionBtn {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 14px 12px;
+  color: var(--text-primary);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.15s ease;
+}
+
+.quickActionBtn:hover {
+  background-color: var(--bg-surface-elevated);
+  border-color: var(--accent-primary);
+  transform: translateY(-2px);
+}
+
+.quickActionIcon {
+  color: var(--accent-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.quickActionText {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.quickActionText small {
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+/* LISTA DE ACORDEÕES */
+.accordionList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.placeholderBox {
+  border: 1px dashed var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
