@@ -21,7 +21,7 @@ export const useSkyData = (): ModalCategoryData[] => {
         { qty: "431", name: "TV NOVO TEMPO HD", price: "HD" },
         { qty: "2", name: "TV CULTURA", price: "SD" },
         { qty: "3", name: "RIT", price: "SD" },
-        { qty: "4/5/10/12", name: "GLOBO", price: "SD" },
+        { qty: "4/5/ 10/12", name: "GLOBO", price: "SD" },
         { qty: "6", name: "REDE VIDA", price: "SD" },
         { qty: "7", name: "RECORD", price: "SD" },
         { qty: "8", name: "CANÇÃO NOVA", price: "SD" },
