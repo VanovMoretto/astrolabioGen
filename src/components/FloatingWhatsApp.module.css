@@ -1,7 +1,10 @@
 .floatingContainer {
+  /* Distância mínima da borda inferior da tela e do topo do rodapé */
+  --floating-gap: 24px;
   position: fixed;
-  top: var(--floating-top-desktop);
-  right: 20px;
+  /* --footer-overlap é atualizado no scroll: quanto do rodapé já está visível */
+  bottom: calc(var(--floating-gap) + var(--footer-overlap, 0px));
+  right: 24px;
   z-index: 900;
   display: flex;
   flex-direction: column;
@@ -19,17 +22,17 @@
   text-decoration: none;
   padding: 10px 16px;
   border-radius: 999px;
-  box-shadow: 0 4px 14px rgba(124, 118, 200, 0.4);
+  box-shadow: 0 4px 14px color-mix(in srgb, var(--color-primary) 40%, transparent);
   border: 2px solid #ffffff;
   font-size: 0.85rem;
   font-weight: 600;
-  transition: background-color 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+  transition: transform 0.2s ease, box-shadow 0.25s ease;
 }
 
+/* Hover: mantém a cor primária e acende um neon da própria cor */
 .floatingBtn:hover {
-  background-color: var(--color-secondary);
   transform: translateX(-4px);
-  box-shadow: 0 6px 18px rgba(58, 186, 203, 0.45);
+  box-shadow: 0 0 18px color-mix(in srgb, var(--color-primary) 70%, transparent);
 }
 
 .label {
@@ -41,6 +44,7 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  color: #25d366; /* Verde oficial do WhatsApp */
 }
 
 /* ==========================================
@@ -48,8 +52,8 @@
    ========================================== */
 @media (max-width: 767px) {
   .floatingContainer {
-    top: var(--floating-top-mobile);
-    right: 8px;
+    --floating-gap: 16px;
+    right: 16px;
     gap: 8px;
   }
 

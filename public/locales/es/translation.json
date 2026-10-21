@@ -3,9 +3,7 @@
   "introText": "El Astrolábio es el directorio oficial de información, normas y políticas de la red Swan Hotéis.\nInspirado en el instrumento que guiaba a los navegantes por las estrellas — entre ellas las de la Constelación del Cisne (Cygnus), que también da origen al nombre Swan, en referencia a la familia Schwan — simboliza precisión, orientación y confianza.\nAl igual que el astrolabio conducía a los exploradores con seguridad, este directorio digital ofrece al huésped una navegación clara y organizada, conectando tradición, tecnología y hospitalidad.",
   "floating": {
     "reception": "Recepción",
-    "restaurant": "Restaurante",
-    "receptionAria": "Contactar a Recepción por WhatsApp",
-    "restaurantAria": "Contactar al Restaurante por WhatsApp"
+    "receptionAria": "Contactar a Recepción por WhatsApp"
   },
   "modal": {
     "frigobarTitle": "Menú del Minibar",
@@ -67,10 +65,12 @@
       "wifiAltNet": "Red: <1>Swan Rede_On</1>",
       "wifiAltPass": "Contraseña: <1>12345678</1>",
       "phonesTitle": "Atención y Teléfonos Útiles:",
-      "whatsappReception": "Recepción: <1>(51) 99228-4510</1>",
-      "whatsappRestaurant": "Restaurante: <1>(51) 98400-8942</1>",
-      "phonesHotel": "Teléfono Recepción: <1>(51) 3327-2222</1>",
-      "phonesReservation": "Central de Reservas: <1>0800 707 7106</1>",
+      "whatsappReception": "Recepción",
+      "whatsappRestaurant": "Restaurante",
+      "phonesHotel": "Teléfono Recepción",
+      "phonesReservation": "Central de Reservas",
+      "actionWhatsapp": "WhatsApp",
+      "actionCall": "Llamar",
       "noExtensionsNote": "*No disponemos de extensiones en las habitaciones. Nuestra atención interna se realiza directamente vía WhatsApp"
     },
     "breakfast": {
@@ -88,6 +88,7 @@
       "roomServiceTitle": "Room Service (Servicio de Habitación):",
       "roomServiceHours": "Todos los días: 11:30 a 22:30",
       "menuButton": "Ver Menú",
+      "orderButton": "Pida aquí",
       "minibarTitle": "Minibar:",
       "minibarDesc": "Consulte los artículos y precios de nuestro minibar."
     },

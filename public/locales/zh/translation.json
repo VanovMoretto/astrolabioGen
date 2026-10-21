@@ -3,9 +3,7 @@
   "introText": "Astrolábio 是 Swan Hotéis 网络的官方信息、规定和政策目录。\n它灵感来源于通过星星（包括天鹅座 Cygnus 中的星星，天鹅座也是 Swan 名字的来源，以纪念 Schwan 家族）指引航海家的仪器，象征着精确、方向和信任。\n正如星盘安全地引导探险家一样，这个数字目录为客人提供了清晰、有组织的导航，连接了传统、技术和热情好客。",
   "floating": {
     "reception": "前台",
-    "restaurant": "餐厅",
-    "receptionAria": "通过 WhatsApp 联系前台",
-    "restaurantAria": "通过 WhatsApp 联系餐厅"
+    "receptionAria": "通过 WhatsApp 联系前台"
   },
   "modal": {
     "frigobarTitle": "迷你吧菜单",
@@ -67,10 +65,12 @@
       "wifiAltNet": "网络: <1>Swan Rede_On</1>",
       "wifiAltPass": "密码: <1>12345678</1>",
       "phonesTitle": "服务与实用电话:",
-      "whatsappReception": "前台: <1>(51) 99228-4510</1>",
-      "whatsappRestaurant": "餐厅: <1>(51) 98400-8942</1>",
-      "phonesHotel": "前台电话: <1>(51) 3327-2222</1>",
-      "phonesReservation": "预订中心: <1>0800 707 7106</1>",
+      "whatsappReception": "前台",
+      "whatsappRestaurant": "餐厅",
+      "phonesHotel": "前台电话",
+      "phonesReservation": "预订中心",
+      "actionWhatsapp": "WhatsApp",
+      "actionCall": "拨打",
       "noExtensionsNote": "*客房内不设电话分机，内部服务请直接通过 WhatsApp 联系"
     },
     "breakfast": {
@@ -88,6 +88,7 @@
       "roomServiceTitle": "Room Service (客房送餐服务):",
       "roomServiceHours": "每天: 11:30 至 22:30",
       "menuButton": "查看菜单",
+      "orderButton": "在此点餐",
       "minibarTitle": "迷你吧:",
       "minibarDesc": "查看我们迷你吧的物品和价格。"
     },

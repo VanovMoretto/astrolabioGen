@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { X, Search } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import type { ModalCategoryData } from "../data/frigobarData";
@@ -19,8 +19,21 @@ interface ModalProps {
   };
 }
 
-const Modal: React.FC<ModalProps> = ({
-  isOpen,
+type ModalDialogProps = Omit<ModalProps, "isOpen" | "data"> & {
+  data: ModalCategoryData[];
+};
+
+// O diálogo só é montado enquanto o modal está aberto, então a busca
+// volta a ficar vazia automaticamente a cada fechamento.
+const Modal: React.FC<ModalProps> = ({ isOpen, data, ...rest }) => {
+  if (!isOpen || !data) {
+    return null;
+  }
+
+  return <ModalDialog data={data} {...rest} />;
+};
+
+const ModalDialog: React.FC<ModalDialogProps> = ({
   onClose,
   title,
   note,
@@ -31,16 +44,6 @@ const Modal: React.FC<ModalProps> = ({
 }) => {
   const { t } = useTranslation();
   const [searchTerm, setSearchTerm] = useState("");
-
-  useEffect(() => {
-    if (!isOpen) {
-      setSearchTerm("");
-    }
-  }, [isOpen]);
-
-  if (!isOpen || !data) {
-    return null;
-  }
 
   const hasQuantity = data[0]?.items[0]?.qty !== undefined;
 

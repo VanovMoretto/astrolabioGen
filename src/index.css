@@ -27,10 +27,6 @@
   --color-text-strong: var(--gen-purple-dark);
   --color-text-on-primary: #ffffff;
 
-  /* Posição vertical dos botões flutuantes (1º terço da tela) */
-  --floating-top-desktop: 28%;
-  --floating-top-mobile: 28%;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
