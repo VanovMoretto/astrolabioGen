@@ -3,9 +3,7 @@
   "introText": "O Astrolábio é o diretório oficial de informações, normas e políticas da rede Swan Hotéis.\nInspirado no instrumento que guiava navegadores pelas estrelas — entre elas as da Constelação do Cisne (Cygnus), que também dá origem ao nome Swan, em referência à família Schwan — ele simboliza precisão, orientação e confiança.\nAssim como o astrolábio conduzia exploradores com segurança, este diretório digital oferece ao hóspede uma navegação clara e organizada, conectando tradição, tecnologia e hospitalidade.",
   "floating": {
     "reception": "Recepção",
-    "restaurant": "Restaurante",
-    "receptionAria": "Falar com a Recepção no WhatsApp",
-    "restaurantAria": "Falar com o Restaurante no WhatsApp"
+    "receptionAria": "Falar com a Recepção no WhatsApp"
   },
   "modal": {
     "frigobarTitle": "Cardápio Frigobar",
@@ -67,10 +65,12 @@
       "wifiAltNet": "Rede: <1>Swan Rede_On</1>",
       "wifiAltPass": "Senha: <1>12345678</1>",
       "phonesTitle": "Atendimento e Telefones Úteis:",
-      "whatsappReception": "Recepção: <1>(51) 99228-4510</1>",
-      "whatsappRestaurant": "Restaurante: <1>(51) 98400-8942</1>",
-      "phonesHotel": "Telefone Recepção: <1>(51) 3327-2222</1>",
-      "phonesReservation": "Central de Reservas: <1>0800 707 7106</1>",
+      "whatsappReception": "Recepção",
+      "whatsappRestaurant": "Restaurante",
+      "phonesHotel": "Telefone Recepção",
+      "phonesReservation": "Central de Reservas",
+      "actionWhatsapp": "WhatsApp",
+      "actionCall": "Ligar",
       "noExtensionsNote": "*Não possuímos ramais nos quartos. Nosso atendimento interno é realizado diretamente via WhatsApp"
     },
     "breakfast": {
@@ -88,6 +88,7 @@
       "roomServiceTitle": "Room Service (Serviço de Quarto):",
       "roomServiceHours": "Todos os dias: 11:30 às 22:30",
       "menuButton": "Ver Cardápio",
+      "orderButton": "Peça aqui",
       "minibarTitle": "Frigobar:",
       "minibarDesc": "Consulte os itens e valores do nosso frigobar."
     },

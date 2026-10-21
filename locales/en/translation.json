@@ -3,9 +3,7 @@
   "introText": "The Astrolábio is the official directory for information, regulations, and policies of the Swan Hotéis network.\nInspired by the instrument that guided navigators by the stars — among them those of the Cygnus Constellation, which also gives rise to the name Swan, in reference to the Schwan family — it symbolizes precision, orientation, and trust.\nJust as the astrolabe safely guided explorers, this digital directory offers the guest clear and organized navigation, connecting tradition, technology, and hospitality.",
   "floating": {
     "reception": "Front Desk",
-    "restaurant": "Restaurant",
-    "receptionAria": "Chat with Front Desk on WhatsApp",
-    "restaurantAria": "Chat with Restaurant on WhatsApp"
+    "receptionAria": "Chat with Front Desk on WhatsApp"
   },
   "modal": {
     "frigobarTitle": "Minibar Menu",
@@ -67,10 +65,12 @@
       "wifiAltNet": "Network: <1>Swan Rede_On</1>",
       "wifiAltPass": "Password: <1>12345678</1>",
       "phonesTitle": "Useful Contacts & Phones:",
-      "whatsappReception": "Front Desk: <1>(51) 99228-4510</1>",
-      "whatsappRestaurant": "Restaurant: <1>(51) 98400-8942</1>",
-      "phonesHotel": "Front Desk Phone: <1>(51) 3327-2222</1>",
-      "phonesReservation": "Reservation Center: <1>0800 707 7106</1>",
+      "whatsappReception": "Front Desk",
+      "whatsappRestaurant": "Restaurant",
+      "phonesHotel": "Front Desk Phone",
+      "phonesReservation": "Reservation Center",
+      "actionWhatsapp": "WhatsApp",
+      "actionCall": "Call",
       "noExtensionsNote": "*We do not have room extensions. Internal assistance is provided directly via WhatsApp"
     },
     "breakfast": {
@@ -88,6 +88,7 @@
       "roomServiceTitle": "Room Service:",
       "roomServiceHours": "Every day: 11:30 AM to 10:30 PM",
       "menuButton": "View Menu",
+      "orderButton": "Order here",
       "minibarTitle": "Minibar:",
       "minibarDesc": "Check the items and prices of our minibar."
     },
